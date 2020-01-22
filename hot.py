@@ -41,6 +41,6 @@ while True:
         hot_point = info['data']['room_info']['online']
         with open('huoguo.txt', 'a+', encoding='utf-8') as f:
             f.write(str(hot_point) + ',' + time.strftime("%d{d}%H{h}%M{m}", time.localtime()).format(d='日', h='时', m='分') + '\n')
-        time.sleep(60)
+        time.sleep(1)
     except:
         print('出现一次错误')
